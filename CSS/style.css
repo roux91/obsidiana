@@ -40,8 +40,7 @@ p{
     margin:0px;
  }
  
- .bg-dark{
-     /* no puedo colocarle el color negro y queda el gris. si me puede ayudar con eso profesor!se lo agradezco */
+ .bg-negro{
      background-color: black;
      --bs-bg-opacity:1;
  }
@@ -85,7 +84,6 @@ p{
 }
 
 .carousel-inner, .carousel-item{
-    width: 100%;
     height: 400px;
 }
 
@@ -301,9 +299,8 @@ p{
     display: grid;
     grid-template-rows: auto;
     gap:20px ;
-    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    /* grid-template-columns: repeat(auto-fit,minmax(320px, 1fr)); */
     justify-content: space-between;
-    flex-wrap: wrap;
 
 }
 
@@ -311,7 +308,7 @@ p{
     width:100%;
     height: 100%;
     object-fit: cover;
-
+    transition:0.5s;
 }
 
 .image{
@@ -322,8 +319,23 @@ border-radius: 20px;
 overflow:hidden;
 }
 
+.image-contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    color: aliceblue;
+    transition: 0.5s;
+}
 
+.image-contenido :hover{
+    background-color: #310336;
+}
 
+.image :hover {
+    width: 600px;
+
+}
 
 
 
@@ -332,7 +344,6 @@ overflow:hidden;
 .box-bg{
 background-color: #94489b;
 display: flex;
-grid-template-rows: auto;
 gap:20px ;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -342,7 +353,7 @@ flex-wrap: wrap;
     display:grid;
     place-content: center;
     width: 300px;
-    height: 300%;
+    height: 100%;
     position: relative;
     transition: 0.5;
     padding: 10px;
