@@ -1,0 +1,532 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal ;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ol{
+    list-style-type: none;
+}
+
+p{
+    color: black(71, 67, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration:none
+}
+
+
+
+.container-fluid{
+    background-color: black;
+    padding: 5px;
+    margin:0px;
+ }
+ 
+ .bg-dark{
+     /* no puedo colocarle el color negro y queda el gris. si me puede ayudar con eso profesor!se lo agradezco */
+     background-color: black;
+     --bs-bg-opacity:1;
+ }
+ 
+ .navbar-dark, .navbar[data-bs-theme=dark ]{
+ --bs-navbar-color: rgba(114, 39, 175, 0.55);
+     --bs-navbar-hover-color: rgba(7, 7, 7, 0.75);
+     --bs-navbar-disabled-color: rgb(110 15 151 / 25%);
+     --bs-navbar-active-color: #7e1188;
+     --bs-navbar-brand-color: #4b0852;
+     --bs-navbar-brand-hover-color: #8f0aaa93;
+     --bs-navbar-toggler-border-color: rgb(129, 13, 110);
+ }
+
+
+.logo{
+    background-repeat: no-repeat;
+    background-size: cover ;
+    align-items: center;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* width:; */
+}
+
+
+.nav-link{
+    color: darkgreen;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    transition:0.5s;
+    border-bottom: 2px;
+}
+
+.nav-link:hover{
+    background-color: aqua;
+    border-bottom: 2px solid transparent;
+    color: brown;
+}
+
+.carousel-inner, .carousel-item{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* pongo esto porque no se como cambiar el color de las flechitas */
+.carousel-control-next, .carousel-control-prev{
+    background-color: #aa7aaf;
+}
+
+.main-items{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    width:  100%;
+    height: 100%;
+}
+
+.main-items-card img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.main-items h2{
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: start;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-items p{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-items-card{
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-items-card div{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-items-card:hover{
+    border-radius: 100%;
+    box-shadow:  7px 7px 7px;
+    background-color: aqua;
+}
+
+.main-items-card img:hover{
+    border-radius: 100%;
+    box-shadow: 7px 7px 7px;
+ 
+}
+
+
+
+/* main de varias paginas */
+
+
+.main-mapa{
+    max-width: 100%;
+    width: 100%;
+    background-color: #94489b;
+}
+
+.los-main{
+    background-color: #94489b;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: flex-start;
+    flex-direction: row;
+    padding: 50px;
+    gap: 50px;
+}
+
+.los-main article{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.los-main label{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+}
+
+
+
+/* main de productos */
+
+.main1{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    align-content: flex-start;
+    object-fit: cover;
+}
+
+
+.main-productos-tittle{
+    background-color: #94489b;
+
+}
+
+.main-productos{
+    background-color: #94489b;
+    display: grid;
+    grid-template-rows: auto;
+    padding: 20px;
+    gap:20px ;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
+
+
+.main-productos article{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    transition: 0.5s;
+    background-color: rgb(56, 5, 78);
+}
+
+.main-productos article :hover{
+    background-color: rgb(146, 146, 146);
+}
+
+.main-productos div :hover{
+    border-bottom: 100%;
+    box-shadow: 5px 5px 5px;
+    background-color: red;
+}
+
+.main-productos img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border:2px solid #000;
+}
+
+
+.main-productos h2{
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: start;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-productos p{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* otra seccion de productos para testear como queda */
+
+.gallery{
+    background-color: #94489b;
+    display: grid;
+    grid-template-rows: auto;
+    gap:20px ;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image{
+width: 100%;
+height: 300px;
+border: 2px solid #000;
+border-radius: 20px;
+overflow:hidden;
+}
+
+
+
+
+
+
+/* probando  en productos */
+
+.box-bg{
+background-color: #94489b;
+display: flex;
+grid-template-rows: auto;
+gap:20px ;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.bg-card{
+    display:grid;
+    place-content: center;
+    width: 300px;
+    height: 300%;
+    position: relative;
+    transition: 0.5;
+    padding: 10px;
+}
+
+.bg-card div{
+    background-color: #411ea32d;
+    padding: 20px;
+    color: rgb(7, 18, 27);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.bg-card :hover{
+   opacity: 1;
+   /* background-color: #000; */
+}
+
+.bg-card img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer-one{
+    background-color: darkviolet;
+    padding: 50px;
+    height: 100%;
+}
+
+.footer-seccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: flex-start;
+}
+
+
+.footer-one article{
+    color:cornsilk ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-align: justify;
+    text-decoration: none;
+    width: 25%;
+    height: 100%;
+}
+
+.link-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal ;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.lista-footer a{
+    color: azure;
+}
+
+.iconos-footer{
+    padding: 10px;
+}
+
+.iconos-footer a {
+    color: azure;
+    padding:5px;
+}
+
+.footer-one h2{
+    color: cornsilk(122, 100, 9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bolder ;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 300px) {
+    .logo{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 300px){
+    .main1{
+        flex-direction: column;
+        background-color: rgb(155, 2, 155);
+        height: 100%;
+    }
+    .main-items {
+        flex-direction: column;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px;
+        grid-column: auto;
+    }
+    .main-items article{
+      height: 100%;
+    }
+ }
+  
+ @media (max-width: 300px) {
+    .los-main {
+        flex-direction: column;
+
+    }
+    .main-mapa {
+        flex-direction: column;
+    }
+    .main-productos{
+        flex-direction: column;
+ 
+    }
+    .main-productos-tittle{
+        flex-direction: column;
+  
+    }
+    .gallery{
+        flex-direction: column;
+    }
+    .image{
+        flex-direction: column;
+    }
+    .image img{
+        flex-direction: column;
+    }
+
+    .bg-card{
+        flex-direction: column;
+    }
+    .box-bg{
+        flex-direction: column;
+    }
+ }
+
+
+@media (max-width: 300px) {
+    .footer-one
+    { background-color: violet;
+    flex-direction: column;}
+    
+    
+
+    .footer-one article {
+        flex-direction: column;
+    }
+
+    .footer-seccion {
+ flex-direction: column;
+    }
+
+}
+
+::selection{
+    background-color:chartreuse;
+    color: darkorchid;
+}
